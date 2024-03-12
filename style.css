@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap");
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #13162b;
+  display: grid;
+  place-items: center;
+}
+.container {
+  position: relative;
+  width: 80vmin;
+  background-color: #191c37;
+  padding: 100px 40px;
+  border-radius: 9px;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+.container::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  left: 7.5%;
+  bottom: -10%;
+  border-radius: 8px;
+  height: 120%;
+  z-index: -1;
+  background-color: #0097ff;
+}
+h1 {
+  text-align: center;
+  color: #ffff;
+  font-size: 5rem;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.btns button {
+  width: 130px;
+  padding: 15px 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.inc,
+button.dec {
+  background-color: #0087ff;
+  color: #ffff;
+}
+button.reset {
+  border: 4px solid #0087ff;
+  color: #0087ff;
+  background: transparent;
+}
