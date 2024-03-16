@@ -23,11 +23,18 @@ body {
   display: grid;
   place-items: center;
 }
+.heading{
+  color:lightgreen;
+  text-align:center;
+  font-size: clamp(4rem, 5vw ,8rem);
+  text-decoration-line:underline;
+  text-decoration-color: red;
+}
 .container {
   position: relative;
-  width: 80vmin;
+  width: 70vmin;
   background-color: #191c37;
-  padding: 100px 40px;
+  padding: 61px 55px;
   border-radius: 9px;
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
 }
@@ -51,6 +58,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
+  gap: 20px;
 }
 .btns button {
   width: 130px;
