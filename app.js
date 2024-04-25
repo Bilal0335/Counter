@@ -10,7 +10,11 @@ btnInc.addEventListener("click", () => {
 });
 
 btnDec.addEventListener("click", () => {
-  value--;
+  if (value == 0) {
+    value = 0;
+  } else {
+    value--;
+  }
   numContainer.textContent = value;
 });
 
